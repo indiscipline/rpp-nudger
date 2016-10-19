@@ -35,11 +35,6 @@ deploy:
   auth_token:
     secure: LwnCUuVi6YlhKOdDif/XgJkQ7MHwiAELreMYMQD6421T5Uq8il0vV1Xi35pn6hHT
   provider: GitHub
-  # deploy when a new tag is pushed and only on the stable channel
-  on:
-    # channel to use to produce the release artifacts
-    # NOTE make sure you only release *once* per target
-    CHANNEL: nightly
 
 branches:
   only:
