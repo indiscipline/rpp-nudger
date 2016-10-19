@@ -1,5 +1,6 @@
 # reaper-item-nudger
 
+[![Build status](https://ci.appveyor.com/api/projects/status/nfljbob6unfwa5j8?svg=true)](https://ci.appveyor.com/project/indiscipline/rpp-nudger)
 [![License](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://github.com/Indiscipline/rpp-nudger/blob/master/LICENSE)
 
 Command line utility for editing Reaper DAW project files and nudging audio content in all items to a specific amount of samples. Program just prints a modified project so user should direct the output to a desired file. 
