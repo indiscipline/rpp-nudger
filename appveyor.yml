@@ -21,8 +21,7 @@ before_deploy:
   # Generate artifacts for release
   - cargo build --release --target %TARGET%
   - mkdir staging
-  # TODO update this part to copy the artifacts that make sense for your project
-  - copy target\release\rpp-nudger.exe staging
+  - copy target\%TARGET%\release\%PROJECT_NAME%.exe staging
   - cd staging
     # release zipfile will look like '%PROJECT_NAME%-v1.2.3-x86_64-pc-windows-msvc'
   - 7z a ../%PROJECT_NAME%-%APPVEYOR_REPO_TAG_NAME%-%TARGET%.zip *
